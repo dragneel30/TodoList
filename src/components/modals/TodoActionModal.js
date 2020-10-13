@@ -41,7 +41,7 @@ const TodoActionModal = (props) => {
                         onChangeText={onHandleTextChanged}/>
                 </View>
                 <View style={styles.statusContainer}>
-                    <Text style={styles.statusContainer}>{displays.status}</Text>
+                    <Text style={styles.statusLabel}>{displays.status}</Text>
                     <Switch
                         circleSize={24}
                         value={isSwitchOn}
@@ -105,7 +105,6 @@ const styles = StyleSheet.create({
     },
     titleInput: {
         marginHorizontal:10,
-        marginTop:10,
         flex:1,
         borderBottomColor: '#000', 
         borderBottomWidth: 1            
